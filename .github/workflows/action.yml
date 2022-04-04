@@ -1,5 +1,8 @@
 name: Shard Demo
 on: [push]
+strategy:
+  matrix:
+    shard: [1, 2, 3, 4]
 jobs:
   run-tests:
     runs-on: ubuntu-latest
@@ -9,4 +12,4 @@ jobs:
         with:
           node-version: "14"
       - run: npm install
-      - run: npm test
+      - run: npm test -- --shard=${{ matrix.node }}/4
