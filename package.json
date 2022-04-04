@@ -1,0 +1,22 @@
+{
+  "name": "jest_shard_workflow_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --runInBand"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxwfreu/jest_shard_workflow_example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxwfreu/jest_shard_workflow_example/issues"
+  },
+  "homepage": "https://github.com/maxwfreu/jest_shard_workflow_example#readme",
+  "devDependencies": {
+    "jest": "^28.0.0-alpha.7"
+  }
+}
