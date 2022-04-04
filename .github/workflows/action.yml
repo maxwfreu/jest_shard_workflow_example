@@ -1,11 +1,11 @@
 name: Shard Demo
 on: [push]
-strategy:
-  matrix:
-    shard: [1, 2, 3, 4]
 jobs:
   run-tests:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        shard: [1, 2, 3, 4]
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
